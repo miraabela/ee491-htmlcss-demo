@@ -2,71 +2,74 @@
 <html>
   <!-- HTML Head -->
 <head>
-<title>Mirabela's Site</title>
-<link rel="stylesheet" href="styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  .favstyle {color:orchid; font-weight: bold; font-style: italic;}
-  #divstyle {background-color:peachpuff; padding:5px;}
-</style>
+  <title>Mirabela's Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <!-- HTML Body -->
 <body>
-<header>
-  <h1>Welcome!</h1>
-  <h2>Here are my <span class="favstyle">favorite</span> Tea shops.</h2>
-</header>
-
-<nav>
-  <a href="https://www.teapressobar.com/">Teapresso</a> | 
-  <a href="http://www.mrteacafe.com/">Mr. Tea</a> | 
-  <a href="https://www.rabbitrabbitteahi.com/">Rabbit Rabbit</a>
-</nav>
-
-<div style="width: 570px;">
-<h3>What to choose?</h3>
-<div id="divstyle">
-<table>
-  <img src="flower.png" style="padding: 10px; float: left; width: 120px;">
-  <img src="flower.png" style="padding: 10px; float: right; width: 120px;">
-
-  <tr>
-    <th>Flavors</th>
-    <th>Options</th>
-  </tr>
-  <tr>
-    <td>
-      <ul>
-        <li>Jasmine Green</li>
-        <li>Oolong</li>
-        <li>Matcha</li>
-        <li>Black</li>
-      </ul>
-    </td>
-    <td>
-      <ol>
-        <li>Boba</li>
-        <li>Milk</li>
-        <li>Ice</li>
-        <li>Sweetness</li>
-      </ol>
-    </td>
-  </tr>
-</table>
-</div>
-
-<img style="float: left; height: 250px; width: 150px; padding-right:10px;" src="sidepic.jpg">
-
-<h4>What is Boba Tea?</h4>
-<p> It consists of milk tea with by chewy tapioca pearls.</p>
-
-<h5>What is Boba?</h5>
-<p>It's a gluten-free starch extracted from the cassava root.</p>
-
-<footer>
-  <h6>Enjoy your day!</h6>
-  <p>Site by Mirabela Medallon for EE491F. 2021.</p>
-</footer>
-</div>
+<div class="back">
+  <div class="grid-container">
+    <!-- welcome -->
+    <div class="welcome">
+      <h1>Welcome!</h1>
+      <h2>Here are my <span id="favstyle">favorite</span> Tea shops.</h2>
+      <nav>
+        <a href="https://www.teapressobar.com/">Teapresso</a> | 
+        <a href="http://www.mrteacafe.com/">Mr. Tea</a> | 
+        <a href="https://www.rabbitrabbitteahi.com/">Rabbit Rabbit</a>
+      </nav>
+    </div>
+    <!-- menu -->
+    <div class="menu">
+      <h3>~ Types of Teas ~</h3> <hr>
+      <div>
+      <table>
+        <img src="flower.png" style="float: left;">
+        <img src="flower.png" style="float: right;">
+    
+        <tr>
+          <th>Flavors</th> <th>Options</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Jasmine Green</li> <li>Oolong</li> <li>Matcha</li> <li>Black</li>
+            </ul>
+          </td>
+          <td>
+            <ol>
+              <li>Boba</li> <li>Milk</li> <li>Ice</li> <li>Sweetness</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+    <!-- stuff -->
+    <div class="stuff">
+      <!-- picture -->
+      <div class="picture">
+        <img class="mypic" id="bobapic" src="boba.png">
+      </div>
+      <!-- text -->
+      <div class="text">
+        <h4>What is Boba Tea?</h4>
+        <p> It consists of milk tea with by chewy tapioca pearls.</p>
+    
+        <h4>What is Boba?</h4>
+        <p>It's a gluten-free starch extracted from the cassava root.</p>
+    
+        <h4>What is Tea?</h4>
+        <p>Anything derived from the Camellia sinensis plant.</p>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <br>
+      <p>Enjoy your day!</p>
+      <h6>Site by Mirabela Medallon for EE491F. 2021.</h6>
+    </div>
+  </div>
 </body>
 </html>

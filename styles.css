@@ -1,0 +1,112 @@
+:root {
+  --litan: rgb(255, 253, 247);
+  --dtan: rgb(255, 231, 174);
+  --lpink: #fcb5e1ff;
+  --dpink: #f986bdff;
+  --lpurp: rgb(197, 202, 255);
+  --dpurp: rgb(95, 68, 246);
+}
+
+body {
+  background-image: url('clouds.jpg');
+  background-size: cover;
+}
+
+.back {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  padding-top: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 570px;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "welcome"
+    "menu"
+    "stuff"
+    "footer";
+    text-align: center;
+    background-color: var(--litan);
+  color: var(--dpurp);
+  border: 8px solid var(--dpink);
+  border-radius: 40px 40px 0px 0px;
+}
+
+.menu, .footer {
+  background-color: var(--dtan); 
+}
+
+.welcome { 
+  grid-area: welcome; 
+  margin-bottom: 20px;
+}
+
+.menu { 
+  grid-area: menu; 
+  padding:5px;
+}
+
+.footer { 
+  grid-area: footer; 
+}
+
+.stuff {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 250px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "picture text";
+  grid-area: stuff;
+}
+
+.picture { 
+  grid-area: picture; 
+  background-image: url('sidepic.jpg'); 
+  background-size: cover;
+}
+
+.text { 
+  grid-area: text; 
+}
+
+.mypic#bobapic[src="boba.png"] {
+  margin-left: auto; margin-right: auto; margin-top:30px;
+  display: block; height: 180px; width: 100px;
+}
+
+#favstyle {
+  color: var(--dpink); 
+  font-weight: bold; 
+  font-style: italic;
+}
+
+nav > a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+[href] {
+  font-style: italic;
+}
+
+[src="flower.png"] {
+  padding: 10px; width: 120px;
+}
+
+table td {
+  text-align: left !important;
+}
+
+hr {
+  border: 1px solid var(--dpurp);
+}
+
+p.text {
+  font-style: italic;
+}
